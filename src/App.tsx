@@ -5,6 +5,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Hero from "./components/Hero";
+import Problem from "./components/Problem";
+import WhatsAppDemo from "./components/WhatsAppDemo";
+import Solution from "./components/Solution";
+import Objections from "./components/Objections";
+import CTA from "./components/CTA";
 
 const queryClient = new QueryClient();
 
