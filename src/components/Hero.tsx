@@ -1,14 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useTimeLock } from "@/hooks/useTimeLock";
 import heroTech from "@/assets/hero-tech.jpg";
 
-const Hero = ({ onTimerStart }: { onTimerStart: () => void }) => {
-  const { startTimer } = useTimeLock(10);
-
+const Hero = ({ onVideoStart }: { onVideoStart: () => void }) => {
   const handlePlayClick = () => {
-    startTimer();
-    onTimerStart();
+    // Inicia o timer silencioso de 10 minutos
+    onVideoStart();
   };
 
   return (
@@ -47,7 +44,7 @@ const Hero = ({ onTimerStart }: { onTimerStart: () => void }) => {
               <div className="relative z-10 text-center">
                 <div 
                   onClick={handlePlayClick}
-                  className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 mx-auto cursor-pointer hover:bg-white/30 transition-all duration-300 hover:scale-110 animate-pulse-slow"
+                  className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 mx-auto cursor-pointer hover:bg-white/30 transition-all duration-300 hover:scale-110"
                 >
                   <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
@@ -57,7 +54,7 @@ const Hero = ({ onTimerStart }: { onTimerStart: () => void }) => {
                   🎬 Assista a Demonstração Completa
                 </p>
                 <p className="text-white/80 text-sm">
-                  Veja como criar seu primeiro robô em menos de 10 minutos
+                  Descubra como faturar R$ 50k+/mês com robôs de IA
                 </p>
               </div>
               
@@ -87,7 +84,7 @@ const Hero = ({ onTimerStart }: { onTimerStart: () => void }) => {
             </div>
           </div>
           <p className="text-center text-white/70 text-sm mt-3">
-            ⏱️ 8 minutos que podem mudar sua vida financeira para sempre
+            ⏱️ Apresentação exclusiva que pode mudar sua vida financeira
           </p>
         </div>
         

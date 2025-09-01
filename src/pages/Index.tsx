@@ -5,32 +5,32 @@ import WhatsAppDemo from "@/components/WhatsAppDemo";
 import Solution from "@/components/Solution";
 import Objections from "@/components/Objections";
 import CTA from "@/components/CTA";
-import TimeLockOverlay from "@/components/TimeLockOverlay";
 import { useTimeLock } from "@/hooks/useTimeLock";
 
 const Index = () => {
-  const [timerStarted, setTimerStarted] = useState(false);
-  const { isUnlocked } = useTimeLock(10);
+  const [videoStarted, setVideoStarted] = useState(false);
+  const { isUnlocked, startTimer } = useTimeLock(10);
 
-  const handleTimerStart = () => {
-    setTimerStarted(true);
+  const handleVideoStart = () => {
+    setVideoStarted(true);
+    startTimer();
   };
 
   return (
-    <div className="min-h-screen relative">
-      <Hero onTimerStart={handleTimerStart} />
+    <div className="min-h-screen">
+      {/* Hero sempre visível */}
+      <Hero onVideoStart={handleVideoStart} />
       
-      {/* Content that gets locked */}
-      <div className={`${!isUnlocked && timerStarted ? 'pointer-events-none select-none opacity-30' : ''} transition-all duration-500`}>
-        <Problem />
-        <WhatsAppDemo />
-        <Solution />
-        <Objections />
-        <CTA />
-      </div>
-      
-      {/* Time lock overlay */}
-      <TimeLockOverlay isActive={timerStarted} />
+      {/* Resto do conteúdo só aparece após 10 minutos */}
+      {isUnlocked && (
+        <div className="animate-fade-in">
+          <Problem />
+          <WhatsAppDemo />
+          <Solution />
+          <Objections />
+          <CTA />
+        </div>
+      )}
     </div>
   );
 };
