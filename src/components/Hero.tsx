@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useTimeLock } from "@/hooks/useTimeLock";
 import heroTech from "@/assets/hero-tech.jpg";
 
-const Hero = () => {
+const Hero = ({ onTimerStart }: { onTimerStart: () => void }) => {
+  const { startTimer } = useTimeLock(10);
+
+  const handlePlayClick = () => {
+    startTimer();
+    onTimerStart();
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -37,7 +45,10 @@ const Hero = () => {
               {/* Video placeholder - replace with actual video */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-tech-blue/20"></div>
               <div className="relative z-10 text-center">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 mx-auto cursor-pointer hover:bg-white/30 transition-all duration-300 hover:scale-110">
+                <div 
+                  onClick={handlePlayClick}
+                  className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 mx-auto cursor-pointer hover:bg-white/30 transition-all duration-300 hover:scale-110 animate-pulse-slow"
+                >
                   <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
