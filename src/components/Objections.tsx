@@ -118,7 +118,7 @@ const Objections = () => {
           <Card className="p-8 bg-gradient-primary text-white">
             <h3 className="text-2xl font-bold mb-4">🛡️ Nossa Garantia Para Você</h3>
             <p className="text-lg mb-6">
-              Se em 30 dias você não estiver 100% satisfeito ou não conseguir criar seu primeiro robô, 
+              Se em 7 dias você não estiver 100% satisfeito ou não conseguir criar seu primeiro robô, 
               devolvemos todo seu dinheiro, sem perguntas, sem burocracia.
             </p>
             <p className="font-semibold">
