@@ -61,27 +61,27 @@ const Solution = () => {
         <div className="bg-gradient-primary p-8 rounded-2xl text-white mb-16">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6">🎁 Bônus Exclusivos</h3>
+              <h3 className="text-3xl font-bold mb-6">🎁 O que você irá receber</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">✨</span>
                   <div>
-                    <p className="font-semibold">Templates Prontos (R$ 997)</p>
-                    <p className="opacity-90 text-sm">10+ robôs para diferentes nichos</p>
+                    <p className="font-semibold">Certificação na Plataforma - R$ 1.990</p>
+                    <p className="opacity-90 text-sm">Aprendendo a fazer Robôs na prática</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">🤝</span>
                   <div>
-                    <p className="font-semibold">Suporte Premium 6 Meses (R$ 1.497)</p>
-                    <p className="opacity-90 text-sm">Grupo VIP + Mentorias ao vivo</p>
+                    <p className="font-semibold">Mentoria Individual por 3 meses - R$ 9.000</p>
+                    <p className="opacity-90 text-sm">Grupo VIP + 6 sessões de mentoria</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">📈</span>
                   <div>
-                    <p className="font-semibold">Scripts de Alto Ticket (R$ 797)</p>
-                    <p className="opacity-90 text-sm">Para vendas de R$ 10k, R$ 20k, R$ 50k+</p>
+                    <p className="font-semibold">Torne-se um Consultor Certificado - R$ inestimável</p>
+                    <p className="opacity-90 text-sm">Receba leads na sua região para você atender.</p>
                   </div>
                 </div>
               </div>
