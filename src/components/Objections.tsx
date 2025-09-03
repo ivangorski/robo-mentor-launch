@@ -63,10 +63,10 @@ const Objections = () => {
               <AccordionContent className="px-6 pb-6">
                 <div className="bg-whatsapp-light p-4 rounded-lg border-l-4 border-whatsapp">
                   <p className="text-muted-foreground">
-                    <strong>Resposta:</strong> Temos uma <strong>Garantia Incondicional de 30 dias</strong>! 
+                    <strong>Resposta:</strong> Temos uma <strong>Garantia Incondicional de 7 dias</strong>! 
                     Se você não conseguir criar seu primeiro robô funcionando ou não ficar satisfeito 
                     por qualquer motivo, devolvemos 100% do seu dinheiro. 
-                    Além disso, te damos listas de leads qualificados e scripts prontos que já converteram milhões!
+                    Além disso, a MENTORIA ajuda demais a entrar com dicas e conselhos sob medida para suas dificuldades.
                   </p>
                 </div>
               </AccordionContent>
