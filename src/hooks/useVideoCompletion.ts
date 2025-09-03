@@ -9,6 +9,15 @@ export const useVideoCompletion = () => {
   };
 
   useEffect(() => {
+    // Debug command - press "D" to reveal content
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.key.toLowerCase() === 'd' && isWatching) {
+        setIsCompleted(true);
+        console.log('🔧 Debug mode activated - Content revealed');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
     const handleVideoEnd = () => {
       setIsCompleted(true);
     };
@@ -35,6 +44,7 @@ export const useVideoCompletion = () => {
     const timeout = setTimeout(handleVideoEvents, 2000);
 
     return () => {
+      window.removeEventListener('keydown', handleKeyPress);
       window.removeEventListener('message', handleMessage);
       clearTimeout(timeout);
       const videos = document.querySelectorAll('video');
@@ -42,11 +52,12 @@ export const useVideoCompletion = () => {
         video.removeEventListener('ended', handleVideoEnd);
       });
     };
-  }, []);
+  }, [isWatching]);
 
   return {
     isCompleted,
     startWatching,
-    isWatching
+    isWatching,
+    setIsCompleted // Adicionado para controle manual se necessário
   };
 };

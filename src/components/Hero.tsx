@@ -3,7 +3,11 @@ import { Badge } from "@/components/ui/badge";
 import { useEffect } from "react";
 import heroTech from "@/assets/hero-tech.jpg";
 
-const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; showCTA?: boolean }) => {
+const Hero = ({ onVideoStart, showCTA = false, isWatching = false }: { 
+  onVideoStart: () => void; 
+  showCTA?: boolean; 
+  isWatching?: boolean; 
+}) => {
   const handlePlayClick = () => {
     // Inicia o timer silencioso de 10 minutos
     onVideoStart();
@@ -65,6 +69,11 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
           </div>
           <p className="text-center text-white/70 text-sm mt-3">
             ⏱️ Apresentação exclusiva que pode mudar sua vida financeira
+            {isWatching && (
+              <span className="block text-xs text-primary-glow mt-1 animate-pulse">
+                💡 Pressione "D" para revelar o conteúdo (modo debug)
+              </span>
+            )}
           </p>
         </div>
         

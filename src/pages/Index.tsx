@@ -9,7 +9,7 @@ import { useVideoCompletion } from "@/hooks/useVideoCompletion";
 
 const Index = () => {
   const [videoStarted, setVideoStarted] = useState(false);
-  const { isCompleted, startWatching } = useVideoCompletion();
+  const { isCompleted, startWatching, isWatching } = useVideoCompletion();
 
   const handleVideoStart = () => {
     setVideoStarted(true);
@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero sempre visível */}
-      <Hero onVideoStart={handleVideoStart} showCTA={isCompleted} />
+      <Hero onVideoStart={handleVideoStart} showCTA={isCompleted} isWatching={isWatching} />
       
       {/* Resto do conteúdo só aparece após assistir o vídeo completo */}
       {isCompleted && (
