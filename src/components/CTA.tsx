@@ -101,7 +101,7 @@ const CTA = () => {
         </div>
         
         <div className="mt-12 p-6 bg-white/5 rounded-xl border border-white/20">
-          <p className="text-lg font-semibold mb-2">🔥 URGÊNCIA REAL</p>
+          <p className="text-lg font-semibold mb-2">🔥 VAGAS LIMITADA COM MENTORIA</p>
           <p className="opacity-90">
             Só conseguimos dar suporte individualizado para 50 alunos este ano. 
             Restam apenas <span className="font-bold text-yellow-300">11 vagas</span>. 
