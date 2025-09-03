@@ -88,10 +88,10 @@ const Solution = () => {
             </div>
             <div className="text-center">
               <div className="bg-white/20 p-6 rounded-xl">
-                <p className="text-sm opacity-90 mb-2">Valor total dos bônus:</p>
-                <p className="text-3xl font-bold line-through opacity-75">R$ 3.291</p>
-                <p className="text-4xl font-bold">GRÁTIS</p>
-                <p className="text-sm opacity-90 mt-2">Para os primeiros 100 alunos</p>
+                <p className="text-sm opacity-90 mb-2">Formação subsidiada:</p>
+                <p className="text-3xl font-bold line-through opacity-75">R$ 10.990</p>
+                <p className="text-4xl font-bold">R$ 1.990</p>
+                <p className="text-sm opacity-90 mt-2">Apenas 50 vagas c/ mentoria</p>
               </div>
             </div>
           </div>
