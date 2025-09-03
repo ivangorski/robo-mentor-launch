@@ -43,7 +43,6 @@ const CTA = () => {
                   <span>Cerificação de Consultor - R$ inestimável</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
                   <span>e tem mais</span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -63,15 +62,15 @@ const CTA = () => {
             
             <div className="text-center">
               <p className="text-lg opacity-75 mb-2">Valor total:</p>
-              <p className="text-4xl font-bold line-through opacity-60">R$ 5.288</p>
+              <p className="text-4xl font-bold line-through opacity-60">R$ 10.990</p>
               
               <p className="text-lg opacity-75 mb-2 mt-4">Sua oportunidade:</p>
               <p className="text-6xl font-bold text-yellow-300">R$ 1.997</p>
               <p className="text-xl opacity-90">ou 12x de R$ 197</p>
               
               <div className="bg-destructive/20 p-4 rounded-lg mt-4">
-                <p className="font-bold">⚡ DESCONTO DE 62% HOJE</p>
-                <p className="text-sm opacity-90">Apenas para os próximos 47 alunos</p>
+                <p className="font-bold">⚡ DESCONTO DE 82% HOJE</p>
+                <p className="text-sm opacity-90">Apenas para os próximos 11 alunos</p>
               </div>
             </div>
           </div>
@@ -105,7 +104,7 @@ const CTA = () => {
           <p className="text-lg font-semibold mb-2">🔥 URGÊNCIA REAL</p>
           <p className="opacity-90">
             Só conseguimos dar suporte individualizado para 100 alunos por turma. 
-            Restam apenas <span className="font-bold text-yellow-300">47 vagas</span>. 
+            Restam apenas <span className="font-bold text-yellow-300">11 vagas</span>. 
             A próxima turma só abre em 3 meses com preço 40% maior.
           </p>
         </div>
