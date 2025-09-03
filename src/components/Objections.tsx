@@ -83,10 +83,9 @@ const Objections = () => {
               <AccordionContent className="px-6 pb-6">
                 <div className="bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
                   <p className="text-muted-foreground">
-                    <strong>Resposta:</strong> Pelo contrário! Você estará À FRENTE da curva. 
-                    Quem domina IA será quem vai LUCRAR com ela, não ser substituído. 
-                    Empresas precisam de especialistas que entendam tanto de negócios quanto de IA. 
-                    Essa é a profissão do futuro, e você está entrando no momento certo!
+                    <strong>Resposta:</strong> Empresas precisam de especialistas que entendam tanto de negócios quanto de IA. 
+                    Essa é a profissão do futuro, e você está entrando no momento certo! 
+                    Aprendendo agora você estará À FRENTE da curva.
                   </p>
                 </div>
               </AccordionContent>
