@@ -26,10 +26,10 @@ const Objections = () => {
               <AccordionContent className="px-6 pb-6">
                 <div className="bg-success/10 p-4 rounded-lg border-l-4 border-success">
                   <p className="text-muted-foreground">
-                    <strong>Resposta:</strong> Nosso método foi criado especificamente para iniciantes! 
-                    87% dos nossos alunos nunca haviam mexido com tecnologia antes. 
-                    Você vai aprender do zero, passo-a-passo, com linguagem simples e suporte completo. 
-                    Se uma dona de casa de 45 anos conseguiu faturar R$ 23k no primeiro mês, você também consegue!
+                    <strong>Resposta:</strong> Nosso método foi criado para iniciantes. 
+                    Você vai aprender do zero, passo-a-passo, com linguagem simples. 
+                    Além disso a MENTORIA permite sanar dúvidas e dificuldades que você tenha - 
+                    além disso lembre-se que você tem 7 dias de garantia se decidir cancelar.
                   </p>
                 </div>
               </AccordionContent>
