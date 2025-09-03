@@ -11,8 +11,8 @@ const Solution = () => {
             🎓 PANTECH - Programa de Aceleração
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Sua Nova Profissão em
-            <span className="block text-primary">30 Dias ou Menos</span>
+            Torne-se um profissional valioso
+            <span className="block text-primary">em uma semana</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Método passo-a-passo para você dominar a criação de robôs de IA, 
@@ -24,36 +24,36 @@ const Solution = () => {
           <Card className="p-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-primary"></div>
             <div className="text-4xl mb-4">📚</div>
-            <h3 className="text-xl font-bold mb-4">Módulo 1: Fundamentos</h3>
+            <h3 className="text-xl font-bold mb-4">Passo 1: Treinamento</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>• O que são chatbots e como lucrar</li>
-              <li>• Análise de mercado e oportunidades</li>
-              <li>• Ferramentas necessárias (gratuitas)</li>
-              <li>• Primeiros passos práticos</li>
+              <li>• Teoria básica e funcionamento da Plataforma</li>
+              <li>• Planejando seu primeiro Robô</li>
+              <li>• Construindo o seu primeiro Robô</li>
+              <li>• Testes e Melhoria contínua</li>
             </ul>
           </Card>
           
           <Card className="p-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-tech"></div>
-            <div className="text-4xl mb-4">🔧</div>
-            <h3 className="text-xl font-bold mb-4">Módulo 2: Criação</h3>
+            <div className="text-4xl mb-4">🧪</div>
+            <h3 className="text-xl font-bold mb-4">Passo 2: Experimentando</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>• Criando seu primeiro robô do zero</li>
-              <li>• Integrações com WhatsApp Business</li>
-              <li>• Scripts de vendas comprovados</li>
-              <li>• Testes e otimizações</li>
+              <li>• Encontrando um cliente piloto</li>
+              <li>• Montando a primeira demo</li>
+              <li>• Seduzindo o cliente na experimentação</li>
+              <li>• Fechando o primeiro contrato</li>
             </ul>
           </Card>
           
           <Card className="p-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-whatsapp"></div>
-            <div className="text-4xl mb-4">💼</div>
+            <div className="text-4xl mb-4">💰</div>
             <h3 className="text-xl font-bold mb-4">Módulo 3: Monetização</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>• Como precificar seus serviços</li>
-              <li>• Estratégias de prospecção</li>
+              <li>• Acelerando as vendas</li>
+              <li>• Tornando-se profissional</li>
               <li>• Apresentação para clientes</li>
-              <li>• Escalando para R$ 50k+/mês</li>
+              <li>• Ultrapassando 10 mil por mês</li>
             </ul>
           </Card>
         </div>
