@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { useEffect } from "react";
 import heroTech from "@/assets/hero-tech.jpg";
 
-const Hero = ({ onVideoStart }: { onVideoStart: () => void }) => {
+const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; showCTA?: boolean }) => {
   const handlePlayClick = () => {
     // Inicia o timer silencioso de 10 minutos
     onVideoStart();
@@ -68,14 +68,16 @@ const Hero = ({ onVideoStart }: { onVideoStart: () => void }) => {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="hero" size="xl" className="min-w-64">
-            🎯 Quero Começar Agora
-          </Button>
-          <Button variant="outline" size="xl" className="min-w-64 border-white/30 text-white hover:bg-white/10">
-            📱 Ver Demonstração
-          </Button>
-        </div>
+        {showCTA && (
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
+            <Button variant="hero" size="xl" className="min-w-64">
+              🎯 Quero Começar Agora
+            </Button>
+            <Button variant="outline" size="xl" className="min-w-64 border-white/30 text-white hover:bg-white/10">
+              📱 Ver Demonstração
+            </Button>
+          </div>
+        )}
         
         <div className="flex flex-wrap justify-center gap-8 text-sm opacity-80">
           <div className="flex items-center gap-2">

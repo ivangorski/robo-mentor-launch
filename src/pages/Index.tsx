@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero sempre visível */}
-      <Hero onVideoStart={handleVideoStart} />
+      <Hero onVideoStart={handleVideoStart} showCTA={isUnlocked} />
       
       {/* Resto do conteúdo só aparece após 10 minutos */}
       {isUnlocked && (
