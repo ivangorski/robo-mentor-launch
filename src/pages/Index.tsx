@@ -5,24 +5,24 @@ import WhatsAppDemo from "@/components/WhatsAppDemo";
 import Solution from "@/components/Solution";
 import Objections from "@/components/Objections";
 import CTA from "@/components/CTA";
-import { useTimeLock } from "@/hooks/useTimeLock";
+import { useVideoCompletion } from "@/hooks/useVideoCompletion";
 
 const Index = () => {
   const [videoStarted, setVideoStarted] = useState(false);
-  const { isUnlocked, startTimer } = useTimeLock(10);
+  const { isCompleted, startWatching } = useVideoCompletion();
 
   const handleVideoStart = () => {
     setVideoStarted(true);
-    startTimer();
+    startWatching();
   };
 
   return (
     <div className="min-h-screen">
       {/* Hero sempre visível */}
-      <Hero onVideoStart={handleVideoStart} showCTA={isUnlocked} />
+      <Hero onVideoStart={handleVideoStart} showCTA={isCompleted} />
       
-      {/* Resto do conteúdo só aparece após 10 minutos */}
-      {isUnlocked && (
+      {/* Resto do conteúdo só aparece após assistir o vídeo completo */}
+      {isCompleted && (
         <div className="animate-fade-in">
           <Problem />
           <WhatsAppDemo />
