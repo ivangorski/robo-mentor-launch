@@ -32,23 +32,31 @@ const CTA = () => {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
-                  <span>Programa PANTECH completo (R$ 1.997)</span>
+                  <span>Certificação na Plataforma - R$ 1.990</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
-                  <span>10+ Templates de robôs prontos (R$ 997)</span>
+                  <span>Mentoria Individual por 3 meses - R$ 9.000</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
-                  <span>Suporte Premium 6 meses (R$ 1.497)</span>
+                  <span>Cerificação de Consultor - R$ inestimável</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
-                  <span>Scripts de Alto Ticket (R$ 797)</span>
+                  <span>e tem mais</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
-                  <span>Garantia incondicional 30 dias</span>
+                  <span>Grupo VIP</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span>Receba leads da sua região</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span>Garantia incondicional de 7 dias</span>
                 </li>
               </ul>
             </div>
@@ -81,7 +89,7 @@ const CTA = () => {
         <div className="grid md:grid-cols-3 gap-6 text-sm opacity-90">
           <div className="flex items-center justify-center gap-2">
             <span className="w-8 h-8 bg-success rounded-full flex items-center justify-center">🛡️</span>
-            <span>Garantia 30 dias</span>
+            <span>Garantia 7 dias</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <span className="w-8 h-8 bg-success rounded-full flex items-center justify-center">💳</span>
