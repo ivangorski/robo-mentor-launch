@@ -102,10 +102,10 @@ const Objections = () => {
               <AccordionContent className="px-6 pb-6">
                 <div className="bg-gradient-primary/10 p-4 rounded-lg border-l-4 border-primary">
                   <p className="text-muted-foreground">
-                    <strong>Resposta:</strong> Pense assim: um curso superior custa R$ 100k+ e demora 4 anos. 
-                    Aqui você investe menos de R$ 2k e em 30 dias já pode estar faturando R$ 5k+/mês. 
+                    <strong>Resposta:</strong> Pense assim: uma graduação custa mais de R$ 100 mil e demora 4 anos, produzindo profissionais sem diferencial. 
+                    Aqui você sai na frente, investe menos de R$ 2k e em menos de 30 dias já pode estar faturando R$ 5k+/mês! 
                     Dividimos em até 12x sem juros. É literalmente o valor de um celular, 
-                    mas que pode transformar sua vida financeira para sempre. 
+                    mas que pode transformar sua vida para sempre. 
                     Quanto você já gastou em coisas que não mudaram sua situação?
                   </p>
                 </div>
