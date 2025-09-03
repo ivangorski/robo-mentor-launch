@@ -73,7 +73,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
               <Button variant="hero" size="xl" className="min-w-64">
                 🎯 Quero Começar Agora
               </Button>
-              <Button variant="outline" size="xl" className="min-w-64 border-white/30 text-white hover:bg-white/10">
+              <Button variant="outline" size="xl" className="min-w-64 border-white/30 text-gray-900 hover:bg-white/10 hover:text-black">
                 📱 Ver Demonstração
               </Button>
             </div>
