@@ -106,7 +106,7 @@ const Solution = () => {
             🚀 Quero Transformar Minha Carreira Agora
           </Button>
           <p className="text-sm text-muted-foreground">
-            ⏰ Oferta por tempo limitado • 💳 Parcelamos em até 12x • 🛡️ Garantia incondicional
+            ⏰ Vagas limitadas • 💳 Parcelamos em até 12x • 🛡️ Garantia Incondicional: 7 dias
           </p>
         </div>
       </div>
