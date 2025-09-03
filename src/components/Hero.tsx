@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useEffect } from "react";
 import heroTech from "@/assets/hero-tech.jpg";
 
 const Hero = ({ onVideoStart }: { onVideoStart: () => void }) => {
@@ -7,6 +8,22 @@ const Hero = ({ onVideoStart }: { onVideoStart: () => void }) => {
     // Inicia o timer silencioso de 10 minutos
     onVideoStart();
   };
+
+  useEffect(() => {
+    // Load the video player script
+    const script = document.createElement("script");
+    script.src = "https://scripts.converteai.net/fdff6f2a-ce9b-408f-9a35-7fddc1c9d4c5/players/68b70cecf062462f922f8aaa/v4/player.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      const existingScript = document.querySelector(`script[src="${script.src}"]`);
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -38,49 +55,12 @@ const Hero = ({ onVideoStart }: { onVideoStart: () => void }) => {
         {/* Video Section */}
         <div className="mb-12 max-w-4xl mx-auto">
           <div className="relative bg-black/20 backdrop-blur-sm rounded-2xl p-2 shadow-glow">
-            <div className="aspect-video bg-gradient-to-br from-black/40 to-black/60 rounded-xl flex items-center justify-center relative overflow-hidden">
-              {/* Video placeholder - replace with actual video */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-tech-blue/20"></div>
-              <div className="relative z-10 text-center">
-                <div 
-                  onClick={handlePlayClick}
-                  className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 mx-auto cursor-pointer hover:bg-white/30 transition-all duration-300 hover:scale-110"
-                >
-                  <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </div>
-                <p className="text-white font-semibold text-lg mb-2">
-                  🎬 Assista a Demonstração Completa
-                </p>
-                <p className="text-white/80 text-sm">
-                  Descubra como faturar R$ 50k+/mês com robôs de IA
-                </p>
-              </div>
-              
-              {/* If you have an actual video, replace the above with: */}
-              {/* 
-              <video 
-                className="w-full h-full object-cover rounded-xl" 
-                poster="path-to-your-thumbnail.jpg"
-                controls
-              >
-                <source src="path-to-your-video.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeos.
-              </video>
-              */}
-              
-              {/* Or for embedded video (YouTube, Vimeo, etc): */}
-              {/* 
-              <iframe 
-                className="w-full h-full rounded-xl"
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="PANTECH Demo Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              */}
+            <div className="aspect-video rounded-xl overflow-hidden" onClick={handlePlayClick}>
+              <div 
+                dangerouslySetInnerHTML={{
+                  __html: '<vturb-smartplayer id="vid-68b70cecf062462f922f8aaa" style="display: block; margin: 0 auto; width: 100%; height: 100%;"></vturb-smartplayer>'
+                }}
+              />
             </div>
           </div>
           <p className="text-center text-white/70 text-sm mt-3">
