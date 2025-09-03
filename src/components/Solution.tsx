@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Rocket } from "lucide-react";
 
 const Solution = () => {
   return (
@@ -61,7 +62,10 @@ const Solution = () => {
         <div className="bg-gradient-primary p-8 rounded-2xl text-white mb-16">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6">🎁 O que você irá receber</h3>
+              <h3 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                <Rocket size={32} />
+                Você irá receber
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">✨</span>
