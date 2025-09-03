@@ -7,7 +7,7 @@ const Objections = () => {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            "Mas E Se..."
+            "Mas e se..."
             <span className="block text-primary">Suas Dúvidas Respondidas</span>
           </h2>
           <p className="text-xl text-muted-foreground">
