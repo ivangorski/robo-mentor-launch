@@ -15,8 +15,8 @@ const WhatsAppDemo = () => {
             Veja Como Funciona na Prática
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Estes são exemplos reais de robôs criados por nossos alunos. 
-            Eles vendem mentoria individualizada automaticamente pelo WhatsApp.
+            Estes são exemplos reais de robôs criados em nossa plataforma. 
+            Esse robô agenda consultas para um médico.
           </p>
         </div>
         
@@ -34,8 +34,8 @@ const WhatsAppDemo = () => {
                   <div className="flex-1">
                     <p className="font-medium mb-2">Robô de IA:</p>
                     <p className="text-muted-foreground">
-                      "Olá! Vi que você tem interesse em mentoria para desenvolvimento pessoal. 
-                      Que tipo de desafio você está enfrentando atualmente?"
+                      "Olá! Vi que você tem uma consulta agendada para hoje às 15h. 
+                      Como posso ajudá-lo?"
                     </p>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ const WhatsAppDemo = () => {
                   <div className="flex-1">
                     <p className="font-medium mb-2">Cliente:</p>
                     <p className="text-muted-foreground">
-                      "Quero mudar de carreira mas não sei por onde começar..."
+                      "Olá! Estou atrasado no trânsito e não vou conseguir chegar às 15h. Tem como reagendar?"
                     </p>
                   </div>
                 </div>
@@ -63,9 +63,8 @@ const WhatsAppDemo = () => {
                   <div className="flex-1">
                     <p className="font-medium mb-2">Robô de IA:</p>
                     <p className="text-muted-foreground">
-                      "Entendo perfeitamente! Mudança de carreira é um dos maiores desafios. 
-                      Tenho um programa específico que já ajudou +500 pessoas. 
-                      Quer conhecer como funciona? É só R$ 497 à vista ou 12x de R$ 49,70."
+                      "Sem problema! Verificando a agenda... Temos disponibilidade às 18h hoje. 
+                      Posso reagendar sua consulta para esse horário?"
                     </p>
                   </div>
                 </div>
