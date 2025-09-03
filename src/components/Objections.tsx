@@ -46,7 +46,7 @@ const Objections = () => {
               <AccordionContent className="px-6 pb-6">
                 <div className="bg-tech-blue-light p-4 rounded-lg border-l-4 border-tech-blue">
                   <p className="text-muted-foreground">
-                    <strong>Resposta:</strong> Comece com 2-3h por semana. Impossível uma oportunidade mais adequada para quem já trabalha ou tem pouco tempo. As aulas são gravadas e você acessa quando quiser. Muitos alunos estudam durante o almoço ou aos fins de semana. Vá aos poucos até sentir segurança
+                    <strong>Resposta:</strong> Comece com 2-3h por semana. É a oportunidade perfeita para quem já trabalha ou tem pouco tempo. As aulas são gravadas e você acessa quando quiser. Muitos alunos estudam durante o almoço ou aos fins de semana. Vá aos poucos até sentir segurança
                   </p>
                 </div>
               </AccordionContent>
