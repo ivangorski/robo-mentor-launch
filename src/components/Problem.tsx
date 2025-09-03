@@ -21,19 +21,19 @@ const Problem = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Empresas perdendo clientes por não responder rapidamente</span>
+                <span>Você trabalha em uma profissão comum, vendendo horas pelo seu serviço.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Profissionais presos em empregos sem perspectiva de crescimento</span>
+                <span>Não tem controle o aumento de salário e não sabe se será promovido</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Custos altos com atendimento humano 24/7</span>
+                <span>Seus custos não param de subir (casamento, escola, filhos)</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Falta de conhecimento técnico para automatizar processos</span>
+                <span>Não consegue realizar seus planos</span>
               </li>
             </ul>
           </Card>
@@ -43,19 +43,23 @@ const Problem = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-success text-xl">✅</span>
-                <span>Mercado de chatbots crescendo 25% ao ano</span>
+                <span>Empresas pagando R$ 3 a 20 mil por mês em Robôs de IA</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-success text-xl">✅</span>
-                <span>Empresas pagando R$ 5.000 - R$ 50.000 por automação</span>
+                <span>Possibilidade de experimentar sem sair do seu emprego</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-success text-xl">✅</span>
-                <span>Trabalhe de casa com alta lucratividade</span>
+                <span>Mercado crescendo mais de 100% todos os anos</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-success text-xl">✅</span>
                 <span>Profissão do futuro com alta demanda</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-success text-xl">✅</span>
+                <span>Trabalhe de casa com qualidade de vida</span>
               </li>
             </ul>
           </Card>
