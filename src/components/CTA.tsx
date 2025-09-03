@@ -105,7 +105,7 @@ const CTA = () => {
           <p className="opacity-90">
             Só conseguimos dar suporte individualizado para 50 alunos este ano. 
             Restam apenas <span className="font-bold text-yellow-300">11 vagas</span>. 
-            A próxima turma só abre em 3 meses com preço 40% maior.
+            A próxima turma somente no ano seguinte com mentorias em grupo. Aproveite.
           </p>
         </div>
       </div>
