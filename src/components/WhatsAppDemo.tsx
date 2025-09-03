@@ -91,8 +91,7 @@ const WhatsAppDemo = () => {
             className="rounded-2xl shadow-primary max-w-4xl mx-auto"
           />
           <p className="mt-6 text-lg text-muted-foreground">
-            Um só robô pode atender centenas de clientes simultaneamente, 
-            qualificando leads e fechando vendas 24/7
+            Quanto vale um robô que atende clientes simultaneamente, não falta e fecha vendas 24x7?
           </p>
         </div>
         
