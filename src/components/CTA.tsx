@@ -4,19 +4,19 @@ import { Badge } from "@/components/ui/badge";
 
 const CTA = () => {
   return (
-    <section id="cta-section" className="py-20 bg-white text-gray-900 relative overflow-hidden">
+    <section id="cta-section" className="py-20 bg-gradient-hero text-white relative overflow-hidden">
       {/* Animated background elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl animate-pulse"></div>
-      <div className="absolute bottom-10 right-10 w-24 h-24 bg-primary-glow/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute top-10 left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse"></div>
+      <div className="absolute bottom-10 right-10 w-24 h-24 bg-primary-glow/20 rounded-full blur-xl animate-pulse"></div>
       
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 text-lg px-6 py-2">
+        <Badge className="mb-6 bg-white/20 text-white border-white/30 text-lg px-6 py-2">
           ⏰ ÚLTIMAS VAGAS DISPONÍVEIS
         </Badge>
         
         <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Sua Nova Vida Começa
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-primary-glow">
             Nos Próximos 30 Dias
           </span>
         </h2>
@@ -25,7 +25,7 @@ const CTA = () => {
           Não deixe essa oportunidade passar. O mercado de IA está explodindo e quem entrar primeiro vai lucrar mais.
         </p>
         
-        <Card className="p-8 mb-8 bg-gray-50 border-gray-200">
+        <Card className="p-8 mb-8 bg-white/10 backdrop-blur-sm border-white/20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-left">
               <h3 className="text-3xl font-bold mb-4">🎯 O Que Você Leva Hoje:</h3>
@@ -65,7 +65,7 @@ const CTA = () => {
               <p className="text-4xl font-bold line-through opacity-60">R$ 10.990</p>
               
               <p className="text-lg opacity-75 mb-2 mt-4">Sua oportunidade:</p>
-              <p className="text-6xl font-bold text-primary">R$ 1.997</p>
+              <p className="text-6xl font-bold text-yellow-300">R$ 1.997</p>
               <p className="text-xl opacity-90">ou 12x de R$ 197</p>
               
               <div className="bg-destructive/20 p-4 rounded-lg mt-4">
@@ -77,7 +77,7 @@ const CTA = () => {
         </Card>
         
         <div className="space-y-4 mb-8">
-          <Button variant="hero" size="xl" className="text-2xl py-6 px-12 w-full md:w-auto">
+          <Button variant="hero" size="xl" className="text-2xl py-6 px-12 w-full md:w-auto bg-white text-gray-900 hover:bg-gray-100">
             🚀 SIM! QUERO GARANTIR MINHA VAGA AGORA
           </Button>
           <p className="text-sm opacity-75">
@@ -100,11 +100,11 @@ const CTA = () => {
           </div>
         </div>
         
-        <div className="mt-12 p-6 bg-gray-50 rounded-xl border border-gray-200">
+        <div className="mt-12 p-6 bg-white/5 rounded-xl border border-white/20">
           <p className="text-lg font-semibold mb-2">🔥 VAGAS LIMITADA COM MENTORIA</p>
           <p className="opacity-90">
             Só conseguimos dar suporte individualizado para 50 alunos este ano. 
-            Restam apenas <span className="font-bold text-primary">11 vagas</span>. 
+            Restam apenas <span className="font-bold text-yellow-300">11 vagas</span>. 
             A próxima turma somente no ano seguinte com mentorias em grupo. Aproveite.
           </p>
         </div>
