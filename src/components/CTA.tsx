@@ -68,7 +68,7 @@ const CTA = () => {
               <p className="text-6xl font-bold text-primary">R$ 1.997</p>
               <p className="text-xl opacity-90">ou 12x de R$ 197</p>
               
-              <div className="bg-destructive/20 p-4 rounded-lg mt-4">
+              <div className="bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white">
                 <p className="font-bold">⚡ DESCONTO DE 82% HOJE</p>
                 <p className="text-sm opacity-90">Apenas para os próximos 11 alunos</p>
               </div>
