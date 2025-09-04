@@ -28,33 +28,33 @@ const CTA = () => {
         <Card className="p-8 mb-8 bg-gray-50 border-gray-200">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-left">
-              <h3 className="text-3xl font-bold mb-4">🎯 O Que Você Leva Hoje:</h3>
+              <h3 className="text-3xl font-bold mb-4">O Que Você Leva Hoje:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span className="text-success">✓</span>
                   <span>Certificação na Plataforma - R$ 1.990</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span className="text-success">✓</span>
                   <span>Mentoria Individual por 3 meses - R$ 9.000</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span className="text-success">✓</span>
                   <span>Cerificação de Consultor - R$ inestimável</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span>e tem mais</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span className="text-success">✓</span>
                   <span>Grupo VIP</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span className="text-success">✓</span>
                   <span>Receba leads da sua região</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-success rounded-full flex items-center justify-center text-xs">✓</span>
+                  <span className="text-success">✓</span>
                   <span>Garantia incondicional de 7 dias</span>
                 </li>
               </ul>
