@@ -75,7 +75,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
                 size="xl" 
                 className="min-w-64"
                 onClick={() => {
-                  const ctaSection = document.querySelector('section:last-of-type');
+                  const ctaSection = document.getElementById('cta-section');
                   ctaSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >

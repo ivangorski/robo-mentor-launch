@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 const CTA = () => {
   return (
-    <section className="py-20 bg-gradient-hero text-white relative overflow-hidden">
+    <section id="cta-section" className="py-20 bg-gradient-hero text-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse"></div>
       <div className="absolute bottom-10 right-10 w-24 h-24 bg-primary-glow/20 rounded-full blur-xl animate-pulse"></div>
