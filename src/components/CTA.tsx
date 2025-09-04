@@ -28,7 +28,7 @@ const CTA = () => {
         <Card className="p-8 mb-8 bg-gray-50 border-gray-200">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-left">
-              <h3 className="text-3xl font-bold mb-4">O Que Você Leva Hoje:</h3>
+              <h3 className="text-3xl font-bold mb-4">O que você leva hoje:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>
