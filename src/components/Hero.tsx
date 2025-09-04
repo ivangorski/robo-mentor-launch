@@ -70,10 +70,26 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
         {showCTA && (
           <div className="animate-fade-in">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button variant="hero" size="xl" className="min-w-64">
+              <Button 
+                variant="cta" 
+                size="xl" 
+                className="min-w-64"
+                onClick={() => {
+                  const ctaSection = document.querySelector('section:last-of-type');
+                  ctaSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 🎯 Quero Começar Agora
               </Button>
-              <Button variant="outline" size="xl" className="min-w-64 border-white/30 text-gray-900 hover:bg-white/10 hover:text-black">
+              <Button 
+                variant="secondary" 
+                size="xl" 
+                className="min-w-64 bg-white/20 text-white border-white/30 hover:bg-white/30 hover:text-white backdrop-blur-sm"
+                onClick={() => {
+                  const whatsappSection = document.getElementById('whatsapp-demo');
+                  whatsappSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 📱 Ver Demonstração
               </Button>
             </div>
