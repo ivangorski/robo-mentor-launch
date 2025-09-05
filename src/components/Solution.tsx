@@ -37,7 +37,7 @@ const Solution = () => {
           <Card className="p-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-tech"></div>
             <div className="text-4xl mb-4">🧪</div>
-            <h3 className="text-xl font-bold mb-4">Passo 2: experimentando</h3>
+            <h3 className="text-xl font-bold mb-4">Passo 2: experimentação</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>• Encontrando um cliente piloto</li>
               <li>• Montando a primeira demo</li>
