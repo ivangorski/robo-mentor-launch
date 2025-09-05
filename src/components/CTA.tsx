@@ -40,7 +40,7 @@ const CTA = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>
-                  <span>Cerificação de Consultor - R$ inestimável</span>
+                  <span>Certificação de Consultor - R$ inestimável</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span>e tem mais</span>
