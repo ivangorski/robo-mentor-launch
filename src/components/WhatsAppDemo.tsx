@@ -74,7 +74,7 @@ const WhatsAppDemo = () => {
           
           <div className="text-center">
             <img 
-              src={whatsappDemo1} 
+              src="/lovable-uploads/07d7f690-69f5-42f2-8a87-771bf73a4dcb.png" 
               alt="WhatsApp Demo" 
               className="rounded-2xl shadow-whatsapp max-w-sm mx-auto"
             />
