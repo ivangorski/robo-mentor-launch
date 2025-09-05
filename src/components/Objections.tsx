@@ -8,7 +8,7 @@ const Objections = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             "Mas e se..."
-            <span className="block text-primary">Suas Dúvidas Respondidas</span>
+            <span className="block text-primary">Suas dúvidas respondidas</span>
           </h2>
           <p className="text-xl text-muted-foreground">
             Entendemos suas preocupações. Aqui estão as respostas para as principais dúvidas.
@@ -116,7 +116,7 @@ const Objections = () => {
         
         <div className="text-center mt-12">
           <Card className="p-8 bg-gradient-primary text-white">
-            <h3 className="text-2xl font-bold mb-4">🛡️ Nossa Garantia Para Você</h3>
+            <h3 className="text-2xl font-bold mb-4">🛡️ Nossa garantia para você</h3>
             <p className="text-lg mb-6">
               Se em 7 dias você não estiver 100% satisfeito ou não conseguir criar seu primeiro robô, 
               devolvemos todo seu dinheiro, sem perguntas, sem burocracia.

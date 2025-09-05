@@ -25,7 +25,7 @@ const Solution = () => {
           <Card className="p-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-primary"></div>
             <div className="text-4xl mb-4">📚</div>
-            <h3 className="text-xl font-bold mb-4">Passo 1: Treinamento</h3>
+            <h3 className="text-xl font-bold mb-4">Passo 1: treinamento</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>• Teoria básica e funcionamento da Plataforma</li>
               <li>• Planejando seu primeiro Robô</li>
@@ -37,7 +37,7 @@ const Solution = () => {
           <Card className="p-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-tech"></div>
             <div className="text-4xl mb-4">🧪</div>
-            <h3 className="text-xl font-bold mb-4">Passo 2: Experimentando</h3>
+            <h3 className="text-xl font-bold mb-4">Passo 2: experimentando</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>• Encontrando um cliente piloto</li>
               <li>• Montando a primeira demo</li>
@@ -49,7 +49,7 @@ const Solution = () => {
           <Card className="p-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-whatsapp"></div>
             <div className="text-4xl mb-4">💰</div>
-            <h3 className="text-xl font-bold mb-4">Módulo 3: Monetização</h3>
+            <h3 className="text-xl font-bold mb-4">Módulo 3: monetização</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>• Acelerando as vendas</li>
               <li>• Tornando-se profissional</li>

@@ -12,7 +12,7 @@ const WhatsAppDemo = () => {
             🤖 Demonstração Real
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Veja Como Funciona na Prática
+            Veja como funciona na prática
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Estes são exemplos reais de robôs criados em nossa plataforma. 
@@ -23,7 +23,7 @@ const WhatsAppDemo = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h3 className="text-3xl font-bold mb-6">
-              💬 Conversação Inteligente
+              💬 Conversação inteligente
             </h3>
             <div className="space-y-6">
               <Card className="p-6 bg-whatsapp/5 border-whatsapp/20">
@@ -98,7 +98,7 @@ const WhatsAppDemo = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">⚡</div>
-            <h4 className="font-bold mb-2">Resposta Instantânea</h4>
+            <h4 className="font-bold mb-2">Resposta instantânea</h4>
             <p className="text-sm text-muted-foreground">
               Cliente nunca fica esperando. Atendimento imediato 24/7.
             </p>
@@ -106,7 +106,7 @@ const WhatsAppDemo = () => {
           
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">🎯</div>
-            <h4 className="font-bold mb-2">Qualificação Inteligente</h4>
+            <h4 className="font-bold mb-2">Qualificação inteligente</h4>
             <p className="text-sm text-muted-foreground">
               IA identifica o perfil do cliente e oferece a solução ideal.
             </p>
@@ -114,7 +114,7 @@ const WhatsAppDemo = () => {
           
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">💰</div>
-            <h4 className="font-bold mb-2">Conversão Alta</h4>
+            <h4 className="font-bold mb-2">Conversão alta</h4>
             <p className="text-sm text-muted-foreground">
               Scripts otimizados que convertem visitantes em clientes.
             </p>

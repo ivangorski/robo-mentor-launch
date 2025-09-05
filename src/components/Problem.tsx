@@ -6,8 +6,8 @@ const Problem = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            A Revolução dos Negócios Digitais
-            <span className="block text-primary">Está Acontecendo Agora</span>
+            A revolução dos negócios digitais
+            <span className="block text-primary">está acontecendo agora</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Enquanto a maioria das pessoas ainda não descobriu, existe uma oportunidade 
@@ -17,7 +17,7 @@ const Problem = () => {
         
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <Card className="p-8 border-l-4 border-l-destructive bg-destructive/5">
-            <h3 className="text-2xl font-bold mb-4 text-destructive">😰 O Problema</h3>
+            <h3 className="text-2xl font-bold mb-4 text-destructive">😰 O problema</h3>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
@@ -39,7 +39,7 @@ const Problem = () => {
           </Card>
           
           <Card className="p-8 border-l-4 border-l-success bg-success/5">
-            <h3 className="text-2xl font-bold mb-4 text-success">🚀 A Oportunidade</h3>
+            <h3 className="text-2xl font-bold mb-4 text-success">🚀 A oportunidade</h3>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-success text-xl">✅</span>
@@ -67,7 +67,7 @@ const Problem = () => {
         
         <div className="text-center">
           <div className="bg-gradient-primary p-8 rounded-2xl text-white max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold mb-4">📊 Dados do Mercado</h3>
+            <h3 className="text-3xl font-bold mb-4">📊 Dados do mercado</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <div className="text-4xl font-bold">R$ 2.5Bi</div>
