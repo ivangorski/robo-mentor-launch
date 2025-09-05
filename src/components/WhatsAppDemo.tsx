@@ -86,7 +86,7 @@ const WhatsAppDemo = () => {
         
         <div className="text-center mb-12">
           <img 
-            src={whatsappMulti} 
+            src="/lovable-uploads/3b26429d-cac0-49c4-ba94-b19c88e13a21.png" 
             alt="Multiple WhatsApp Conversations" 
             className="rounded-2xl shadow-primary max-w-4xl mx-auto"
           />
