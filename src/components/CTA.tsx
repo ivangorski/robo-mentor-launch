@@ -15,9 +15,9 @@ const CTA = () => {
         </Badge>
         
         <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Sua Nova Vida Começa
+          Sua nova vida começa
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">
-            Nos Próximos 30 Dias
+            nos próximos 30 dias
           </span>
         </h2>
         
