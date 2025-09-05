@@ -68,18 +68,29 @@ const CTA = () => {
               <p className="text-6xl font-bold text-primary">R$ 1.997</p>
               <p className="text-xl opacity-90">ou 12x de R$ 197</p>
               
-              <div className="bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white">
+              <a 
+                href="https://www.asaas.com/c/svykllvimm6r8na5" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white hover:shadow-glow transition-all duration-300 cursor-pointer"
+              >
                 <p className="font-bold">⚡ DESCONTO DE 82% HOJE</p>
                 <p className="text-sm opacity-90">Apenas para os próximos 11 alunos</p>
-              </div>
+              </a>
             </div>
           </div>
         </Card>
         
         <div className="space-y-4 mb-8">
-          <Button variant="hero" size="xl" className="text-2xl py-6 px-12 w-full md:w-auto bg-white text-gray-900 hover:bg-gray-100">
-            🚀 SIM! QUERO GARANTIR MINHA VAGA AGORA
-          </Button>
+          <a 
+            href="https://www.asaas.com/c/svykllvimm6r8na5" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button variant="cta" size="xl" className="text-2xl py-6 px-12 w-full md:w-auto bg-gradient-to-r from-primary to-primary-glow text-white hover:shadow-glow border-2 border-primary">
+              🚀 SIM! QUERO GARANTIR MINHA VAGA AGORA
+            </Button>
+          </a>
           <p className="text-sm opacity-75">
             🔒 Pagamento 100% seguro • ⚡ Acesso imediato • 🎁 Bônus liberados na hora
           </p>
