@@ -66,20 +66,7 @@
       // Timer para mostrar elementos escondidos após 5 segundos
       window.addEventListener('load', function() {
 
-        console.log("**"+sessionStorage.getItem('visto')+"**");
-      
-        // Verifica se já foi visto antes
-        if (sessionStorage.getItem('visto')==='true') {
-
-          console.log('ja visto');
-          // Se já foi visto, mostra imediatamente
-      
-          var hiddoElements = document.querySelectorAll('.esconder');
-            hiddoElements.forEach(function(element) {
-              element.classList.remove('esconder');
-            });
-      
-        } else {
+  
           // Se não foi visto, inicia o timer
           setTimeout(function() {
             var hiddenElements = document.querySelectorAll('.esconder');
@@ -89,7 +76,7 @@
             // Marca como visto no sessionStorage
             sessionStorage.setItem('visto', 'true');
           }, 5000); // 5 segundos
-        }
+
       });
     </script>
 
