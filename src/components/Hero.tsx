@@ -73,7 +73,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="min-w-64"
+                className="esconder min-w-64"
                 onClick={() => {
                   const ctaSection = document.getElementById('cta-section');
                   ctaSection?.scrollIntoView({ behavior: 'smooth' });
@@ -84,7 +84,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
               <Button 
                 variant="secondary" 
                 size="xl" 
-                className="min-w-64 bg-white/20 text-white border-white/30 hover:bg-white/30 hover:text-white backdrop-blur-sm"
+                className="esconder min-w-64 bg-white/20 text-white border-white/30 hover:bg-white/30 hover:text-white backdrop-blur-sm"
                 onClick={() => {
                   const whatsappSection = document.getElementById('whatsapp-demo');
                   whatsappSection?.scrollIntoView({ behavior: 'smooth' });
