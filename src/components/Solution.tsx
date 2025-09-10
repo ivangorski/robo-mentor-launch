@@ -5,7 +5,7 @@ import { Rocket } from "lucide-react";
 
 const Solution = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/30">
+    <section className="esconder py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="mb-6 bg-gradient-primary text-white">

@@ -5,7 +5,7 @@ import whatsappMulti from "@/assets/whatsapp-multi.jpg";
 
 const WhatsAppDemo = () => {
   return (
-    <section id="whatsapp-demo" className="py-20 bg-whatsapp-light/20">
+    <section id="whatsapp-demo" className="esconder py-20 bg-whatsapp-light/20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="mb-6 bg-whatsapp text-whatsapp-foreground">

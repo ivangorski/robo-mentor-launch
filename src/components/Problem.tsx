@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 
 const Problem = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-muted/50 to-background">
+    <section className="esconder py-20 bg-gradient-to-b from-muted/50 to-background">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
