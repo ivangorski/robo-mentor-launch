@@ -102,9 +102,16 @@ const Solution = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="cta" size="xl" className="mb-4">
-            🚀 Quero Transformar Minha Carreira Agora
-          </Button>
+          <a 
+            href="https://www.asaas.com/c/svykllvimm6r8na5" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'TRANSFORMAR'})}
+          >
+            <Button variant="cta" size="xl" className="mb-4">
+              🚀 Quero Transformar Minha Carreira Agora
+            </Button>
+          </a>
           <p className="text-sm text-muted-foreground">
             ⏰ Vagas limitadas • 💳 Parcelamos em até 12x • 🛡️ Garantia Incondicional: 7 dias
           </p>
