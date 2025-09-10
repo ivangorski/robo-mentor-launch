@@ -56,7 +56,7 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <style>
+    <style id="esconderClass">
       .esconder {
         display: none;
       }
@@ -78,6 +78,27 @@
           }, 5000); // 5 segundos
 
       });
+    </script>
+
+    <script>
+     if (sessionStorage.getItem('visto')==='true'){
+
+         // Timer para mostrar elementos escondidos após 5 segundos
+          window.addEventListener('load', function() {
+
+          // Se não foi visto, inicia o timer
+          setTimeout(function() {
+            var hiddenElements = document.querySelectorAll('.esconder');
+            hiddenElements.forEach(function(element) {
+              element.classList.remove('esconder');
+            });
+            // Marca como visto no sessionStorage
+            //sessionStorage.setItem('visto', 'true');
+          }, 1000); // 5 segundos
+
+      });
+       
+     }
     </script>
 
   
