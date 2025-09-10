@@ -65,6 +65,9 @@
     <script>
       // Timer para mostrar elementos escondidos após 5 segundos
       window.addEventListener('load', function() {
+
+        console.log("**"+sessionStorage.getItem('visto')+"**");
+      
         // Verifica se já foi visto antes
         if (sessionStorage.getItem('visto') == 'true') {
           // Se já foi visto, mostra imediatamente
