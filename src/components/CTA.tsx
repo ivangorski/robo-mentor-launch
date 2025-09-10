@@ -99,15 +99,15 @@ const CTA = () => {
         
         <div className="grid md:grid-cols-3 gap-6 text-sm opacity-90">
           <div className="flex items-center justify-center gap-2">
-            <span className="w-8 h-8 bg-success rounded-full flex items-center justify-center">🛡️</span>
+            <span className="w-8 h-8 rounded-full flex items-center justify-center">🛡️</span>
             <span>Garantia 7 dias</span>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="w-8 h-8 bg-success rounded-full flex items-center justify-center">💳</span>
+            <span className="w-8 h-8 rounded-full flex items-center justify-center">💳</span>
             <span>12x sem juros</span>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="w-8 h-8 bg-success rounded-full flex items-center justify-center">⏰</span>
+            <span className="w-8 h-8 rounded-full flex items-center justify-center">⏰</span>
             <span>Acesso vitalício</span>
           </div>
         </div>
