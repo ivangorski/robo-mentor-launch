@@ -71,9 +71,9 @@
           var hiddenElements = document.querySelectorAll('.esconder');
           hiddenElements.forEach(function(element) {
             element.classList.remove('esconder');
-          }
+          });
+      }
           
-        }else{
         
         setTimeout(function() {
           sessionStorage.setItem('visto', true');
@@ -82,6 +82,8 @@
             element.classList.remove('esconder');
           });
         }, 5000); // 5 segundos
+
+      
       });
     </script>
 
