@@ -86,6 +86,7 @@ const CTA = () => {
             href="https://www.asaas.com/c/svykllvimm6r8na5" 
             target="_blank" 
             rel="noopener noreferrer"
+            onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'SIM_QUERO'})}
           >
             <Button variant="cta" size="xl" className="text-2xl py-6 px-12 w-full md:w-auto bg-gradient-to-r from-primary to-primary-glow text-white hover:shadow-glow border-2 border-primary">
               🚀 SIM! QUERO GARANTIR MINHA VAGA AGORA
