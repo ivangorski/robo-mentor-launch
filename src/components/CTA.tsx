@@ -10,7 +10,7 @@ const CTA = () => {
       <div className="absolute bottom-10 right-10 w-24 h-24 bg-primary-glow/10 rounded-full blur-xl animate-pulse"></div>
       
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 text-lg px-6 py-2">
+        <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 text-lg px-6 py-2 smartplayer-scroll-event">
           ⏰ ÚLTIMAS VAGAS DISPONÍVEIS
         </Badge>
         
