@@ -72,6 +72,7 @@ const CTA = () => {
                 href="https://www.asaas.com/c/svykllvimm6r8na5" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'DESCONTO'})}
                 className="block bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white hover:shadow-glow transition-all duration-300 cursor-pointer"
               >
                 <p className="font-bold">⚡ DESCONTO DE 82% HOJE</p>
