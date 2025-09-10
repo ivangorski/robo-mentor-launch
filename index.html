@@ -69,7 +69,7 @@
         console.log("**"+sessionStorage.getItem('visto')+"**");
       
         // Verifica se já foi visto antes
-        if (sessionStorage.getItem('visto') == 'true') {
+        if (sessionStorage.getItem('visto')) {
           // Se já foi visto, mostra imediatamente
           var hiddenElements = document.querySelectorAll('.esconder');
           hiddenElements.forEach(function(element) {
