@@ -55,5 +55,21 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <style>
+      .esconder {
+        display: none;
+      }
+    </style>
+
+    <script>
+      var delaySeconds = 5;
+      var player = document.querySelector("vturb-smartplayer");
+      player.addEventListener("player:ready", function() {
+        player.displayHiddenElements(delaySeconds, [".esconder"], {
+          persist: true
+        });
+      });
+    </script>
   </body>
 </html>
