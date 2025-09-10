@@ -73,10 +73,12 @@
 
           console.log('ja visto');
           // Se já foi visto, mostra imediatamente
-          var hiddenElements = document.querySelectorAll('.esconder');
-            hiddenElements.forEach(function(element) {
+      
+          var hiddoElements = document.querySelectorAll('.esconder');
+            hiddoElements.forEach(function(element) {
               element.classList.remove('esconder');
             });
+      
         } else {
           // Se não foi visto, inicia o timer
           setTimeout(function() {
