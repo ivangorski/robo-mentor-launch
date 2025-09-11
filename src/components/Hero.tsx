@@ -71,17 +71,6 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
           <div className="animate-fade-in">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button 
-                variant="cta" 
-                size="xl" 
-                className="esconder min-w-64"
-                onClick={() => {
-                  const ctaSection = document.getElementById('cta-section');
-                  ctaSection?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                🎯 Quero Começar Agora
-              </Button>
-              <Button 
                 variant="secondary" 
                 size="xl" 
                 className="esconder min-w-64 bg-white/20 text-white border-white/30 hover:bg-white/30 hover:text-white backdrop-blur-sm"
@@ -91,6 +80,17 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
                 }}
               >
                 📱 Ver Demonstração
+              </Button>
+              <Button 
+                variant="cta" 
+                size="xl" 
+                className="esconder min-w-64"
+                onClick={() => {
+                  const ctaSection = document.getElementById('cta-section');
+                  ctaSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                🎯 Quero Começar Agora
               </Button>
             </div>
             
