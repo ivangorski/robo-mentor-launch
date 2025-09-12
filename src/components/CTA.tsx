@@ -75,7 +75,7 @@ const CTA = () => {
                 onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'DESCONTO'})}
                 className="block bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white hover:shadow-glow transition-all duration-300 cursor-pointer"
               >
-                <p className="font-bold">⚡ DESCONTO DE 82% HOJE</p>
+                <p className="font-bold">⚡ DESCONTO DE 80% HOJE</p>
                 <p className="text-sm opacity-90">Apenas para os próximos 11 alunos</p>
               </a>
             </div>
