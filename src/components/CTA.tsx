@@ -62,7 +62,7 @@ const CTA = () => {
             
             <div className="text-center">
               <p className="text-lg opacity-75 mb-2">Valor total:</p>
-              <p className="text-4xl font-bold line-through opacity-60">R$ 10.990</p>
+              <p className="text-4xl font-bold line-through opacity-60">R$ 9.897</p>
               
               <p className="text-lg opacity-75 mb-2 mt-4">Sua oportunidade:</p>
               <p className="text-6xl font-bold text-primary">R$ 1.997</p>
