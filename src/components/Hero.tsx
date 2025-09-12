@@ -15,6 +15,28 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
     script.async = true;
     document.head.appendChild(script);
 
+    // Function to wait for player and setup delay
+    const setupPlayerDelay = () => {
+      const delaySeconds = 10;
+      const player = document.querySelector("vturb-smartplayer") as any;
+      
+      if (player) {
+        player.addEventListener("player:ready", function() {
+          player.displayHiddenElements(delaySeconds, [".esconder"], {
+            persist: true
+          });
+        });
+      } else {
+        // If player not found, try again after a short delay
+        setTimeout(setupPlayerDelay, 500);
+      }
+    };
+
+    // Start checking for player after script loads
+    script.onload = () => {
+      setTimeout(setupPlayerDelay, 1000);
+    };
+
     return () => {
       // Cleanup script on unmount
       const existingScript = document.querySelector(`script[src="${script.src}"]`);
