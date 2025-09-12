@@ -11,7 +11,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
   useEffect(() => {
     // Load the video player script
     const script = document.createElement("script");
-    script.src = "https://scripts.converteai.net/fdff6f2a-ce9b-408f-9a35-7fddc1c9d4c5/players/68c433237dd44b408b427f1e/v4/player.js";
+    script.src = "https://scripts.converteai.net/fdff6f2a-ce9b-408f-9a35-7fddc1c9d4c5/players/68b70cecf062462f922f8aaa/v4/player.js";
     script.async = true;
     document.head.appendChild(script);
 
@@ -79,7 +79,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
             <div className="aspect-video rounded-xl overflow-hidden" onClick={handlePlayClick}>
               <div 
                 dangerouslySetInnerHTML={{
-                  __html: '<vturb-smartplayer id="vid-68c433237dd44b408b427f1e" style="display: block; margin: 0 auto; width: 100%; height: 100%;"></vturb-smartplayer>'
+                  __html: '<vturb-smartplayer id="vid-68b70cecf062462f922f8aaa" style="display: block; margin: 0 auto; width: 100%; height: 100%;"></vturb-smartplayer>'
                 }}
               />
             </div>
