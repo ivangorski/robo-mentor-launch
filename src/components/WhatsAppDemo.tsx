@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import whatsappDemo1 from "@/assets/whatsapp-demo1.jpg";
-import whatsappMulti from "@/assets/whatsapp-multi.jpg";
+import whatsappRobotDemo from "@/assets/whatsapp-robot-demo.jpg";
 
 const WhatsAppDemo = () => {
   return (
@@ -86,8 +86,8 @@ const WhatsAppDemo = () => {
         
         <div className="text-center mb-12">
           <img 
-            src="/lovable-uploads/74daf958-5fa8-498d-8f37-2a1634b84be1.png" 
-            alt="Multiple WhatsApp Conversations" 
+            src={whatsappRobotDemo}
+            alt="WhatsApp AI Robot Demo" 
             className="rounded-2xl shadow-primary max-w-4xl mx-auto"
           />
           <p className="mt-6 text-lg text-muted-foreground">
