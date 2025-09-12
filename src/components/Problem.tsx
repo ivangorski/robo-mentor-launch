@@ -43,7 +43,7 @@ const Problem = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-success text-xl">✅</span>
-                <span>Empresas pagando R$ 3 a 20 mil por mês em Robôs de IA</span>
+                <span>Empresas pagando de R$ 2 a 20 mil por mês em Robôs de IA</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-success text-xl">✅</span>
