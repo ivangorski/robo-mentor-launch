@@ -57,49 +57,75 @@
     <script type="module" src="/src/main.tsx"></script>
     
     <style id="esconderClass">
-      .Xesconder {
+      .esconder {
         display: none;
       }
     </style>
 
-    <script>
-      // Timer para mostrar elementos escondidos após 5 segundos
-      window.addEventListener('load', function() {
+   <script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+    var SECONDS_TO_DISPLAY = 10;
+    var CLASS_TO_DISPLAY = ".esconder";
+/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+    var EXPIRATION_DAYS = 14;
+    var alreadyDisplayedKey = "alreadyElsDisplayed" + SECONDS_TO_DISPLAY;
+    var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+    var elsDisplayed = false;
+    var attempts = 0;
 
-  
-          // Se não foi visto, inicia o timer
-          setTimeout(function() {
-            var hiddenElements = document.querySelectorAll('.esconder');
-            hiddenElements.forEach(function(element) {
-              element.classList.remove('esconder');
-            });
-            // Marca como visto no sessionStorage
-            sessionStorage.setItem('visto', 'true');
-          }, 600000); // 10 min
+    class StorageHandler {
+        static expiryTime = EXPIRATION_DAYS * 86400000;
 
-      });
-    </script>
+        static set(key, value) {
+            localStorage.setItem(
+                key,
+                JSON.stringify({ value, expiry: Date.now() + this.expiryTime })
+            );
+        }
 
-    <script>
-     if (sessionStorage.getItem('visto')==='true'){
+        static get(key) {
+            var item = localStorage.getItem(key);
+            if (!item) return null;
 
-         // Timer para mostrar elementos escondidos após 5 segundos
-          window.addEventListener('load', function() {
+            var { value, expiry } = JSON.parse(item);
+            if (Date.now() > expiry) {
+                localStorage.removeItem(key);
+                return null;
+            }
+            return value;
+        }
+    }
 
-          // Se não foi visto, inicia o timer
-          setTimeout(function() {
-            var hiddenElements = document.querySelectorAll('.esconder');
-            hiddenElements.forEach(function(element) {
-              element.classList.remove('esconder');
-            });
-            // Marca como visto no sessionStorage
-            //sessionStorage.setItem('visto', 'true');
-          }, 1000); // 5 segundos
+    var alreadyElsDisplayed = StorageHandler.get(alreadyDisplayedKey);
 
-      });
-       
-     }
-    </script>
+    var showHiddenElements = function () {
+        elsDisplayed = true;
+        elsHidden.forEach((e) => e.style.display = "block");
+        StorageHandler.set(alreadyDisplayedKey, true);
+    };
+
+    var startWatchVideoProgress = function () {
+        if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+            if (attempts >= 10) return;
+            attempts++;
+            return setTimeout(startWatchVideoProgress, 1000);
+        }
+        smartplayer.instances[0].on('timeupdate', () => {
+            if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+            if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+            showHiddenElements();
+        });
+    };
+
+    if (alreadyElsDisplayed) {
+        setTimeout(showHiddenElements, 100);
+    } else {
+        startWatchVideoProgress();
+    }
+});
+   
+   </script>
 
   
   </body>
