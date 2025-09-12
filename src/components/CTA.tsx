@@ -32,7 +32,7 @@ const CTA = () => {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>
-                  <span>Certificação na Plataforma - R$ 1.990</span>
+                  <span>90 dias plataforma - R$ 897</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>

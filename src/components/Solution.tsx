@@ -70,7 +70,7 @@ const Solution = () => {
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">✨</span>
                   <div>
-                    <p className="font-semibold">Certificação na Plataforma - R$ 1.990</p>
+                    <p className="font-semibold">90 dias plataforma - R$ 897</p>
                     <p className="opacity-90 text-sm">Aprendendo a fazer Robôs na prática</p>
                   </div>
                 </div>
