@@ -37,7 +37,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
             <div className="aspect-video rounded-xl overflow-hidden">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/LmiEsSk12JA"
+                src="https://www.youtube.com/embed/LmiEsSk12JA?rel=0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
