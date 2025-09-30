@@ -1,6 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
 const CTA = () => {
   return (
@@ -70,31 +80,68 @@ const CTA = () => {
                 <span className="text-4xl">R$ 29,90</span>
               </p>
               
-              <a 
-                href="https://www.asaas.com/c/svykllvimm6r8na5" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'DESCONTO'})}
-                className="block bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white hover:shadow-glow transition-all duration-300 cursor-pointer"
-              >
-                <p className="font-bold">⚡ FORMAÇÃO COM BOLSA 95%</p>
-                <p className="text-sm opacity-90">Apenas para os próximos 11 alunos</p>
-              </a>
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <div 
+                    onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'DESCONTO'})}
+                    className="block bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white hover:shadow-glow transition-all duration-300 cursor-pointer"
+                  >
+                    <p className="font-bold">⚡ FORMAÇÃO COM BOLSA 95%</p>
+                    <p className="text-sm opacity-90">Apenas para os próximos 11 alunos</p>
+                  </div>
+                </AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Para contratar a mentoria escolha o pacote INICIANTE</AlertDialogTitle>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogAction asChild>
+                      <a 
+                        href="https://contrate.robotsa.com.br/?plan=iniciante"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full"
+                      >
+                        CONTRATAR
+                      </a>
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
             </div>
           </div>
         </Card>
         
         <div className="space-y-4 mb-8">
-          <a 
-            href="https://www.asaas.com/c/svykllvimm6r8na5" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'SIM_QUERO'})}
-          >
-            <Button variant="cta" size="xl" className="text-2xl py-6 px-12 w-full md:w-auto bg-gradient-to-r from-primary to-primary-glow text-white hover:shadow-glow border-2 border-primary">
-              🚀 SIM! QUERO GARANTIR MINHA VAGA AGORA
-            </Button>
-          </a>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button 
+                variant="cta" 
+                size="xl" 
+                className="text-2xl py-6 px-12 w-full md:w-auto bg-gradient-to-r from-primary to-primary-glow text-white hover:shadow-glow border-2 border-primary"
+                onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'SIM_QUERO'})}
+              >
+                🚀 SIM! QUERO GARANTIR MINHA VAGA AGORA
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Para contratar a mentoria escolha o pacote INICIANTE</AlertDialogTitle>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogAction asChild>
+                  <a 
+                    href="https://contrate.robotsa.com.br/?plan=iniciante"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    CONTRATAR
+                  </a>
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
           <p className="text-sm opacity-75">
             🔒 Pagamento 100% seguro • ⚡ Acesso imediato • 🎁 Bônus liberados na hora
           </p>
