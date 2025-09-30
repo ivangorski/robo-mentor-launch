@@ -2,7 +2,7 @@ import logoRobotsa from "@/assets/logo-robotsa.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-muted border-t border-[hsl(var(--tech-blue-dark))] py-12">
+    <footer className="bg-muted border-t border-gray-400 py-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-6">
           {/* Left side: Logo + Company Info */}
