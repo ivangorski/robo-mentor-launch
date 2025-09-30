@@ -1,50 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useEffect } from "react";
 import heroTech from "@/assets/hero-tech.jpg";
 
 const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; showCTA?: boolean }) => {
-  const handlePlayClick = () => {
-    onVideoStart();
-  };
-
-  useEffect(() => {
-    // Load the video player script
-    const script = document.createElement("script");
-    script.src = "https://scripts.converteai.net/fdff6f2a-ce9b-408f-9a35-7fddc1c9d4c5/players/68c46de2c784f83dc7b497c1/v4/player.js";
-    script.async = true;
-    document.head.appendChild(script);
-
-    // Function to wait for player and setup delay
-    const setupPlayerDelay = () => {
-      const delaySeconds = 660;
-      const player = document.querySelector("vturb-smartplayer") as any;
-      
-      if (player) {
-        player.addEventListener("player:ready", function() {
-          player.displayHiddenElements(delaySeconds, [".esconder"], {
-            persist: true
-          });
-        });
-      } else {
-        // If player not found, try again after a short delay
-        setTimeout(setupPlayerDelay, 500);
-      }
-    };
-
-    // Start checking for player after script loads
-    script.onload = () => {
-      setTimeout(setupPlayerDelay, 1000);
-    };
-
-    return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector(`script[src="${script.src}"]`);
-      if (existingScript) {
-        document.head.removeChild(existingScript);
-      }
-    };
-  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -76,11 +34,14 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
         {/* Video Section */}
         <div className="mb-12 max-w-4xl mx-auto">
           <div className="relative bg-black/20 backdrop-blur-sm rounded-2xl p-2 shadow-glow">
-            <div className="aspect-video rounded-xl overflow-hidden" onClick={handlePlayClick}>
-              <div 
-                dangerouslySetInnerHTML={{
-                  __html: '<vturb-smartplayer id="vid-68c46de2c784f83dc7b497c1" style="display: block; margin: 0 auto; width: 100%; height: 100%;"></vturb-smartplayer>'
-                }}
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/LmiEsSk12JA"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               />
             </div>
           </div>
@@ -95,7 +56,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
               <Button 
                 variant="secondary" 
                 size="xl" 
-                className="esconder min-w-64 bg-white/20 text-white border-white/30 hover:bg-white/30 hover:text-white backdrop-blur-sm"
+                className="min-w-64 bg-white/20 text-white border-white/30 hover:bg-white/30 hover:text-white backdrop-blur-sm"
                 onClick={() => {
                   const whatsappSection = document.getElementById('whatsapp-demo');
                   whatsappSection?.scrollIntoView({ behavior: 'smooth' });
@@ -106,7 +67,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="esconder min-w-64"
+                className="min-w-64"
                 onClick={() => {
                   const ctaSection = document.getElementById('cta-section');
                   ctaSection?.scrollIntoView({ behavior: 'smooth' });
