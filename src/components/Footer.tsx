@@ -2,7 +2,7 @@ import logoRobotsa from "@/assets/logo-robotsa.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-background to-muted/30 border-t border-border py-12">
+    <footer className="bg-muted border-t border-border py-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center space-y-4">
           {/* Logo */}
