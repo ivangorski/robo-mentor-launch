@@ -2,6 +2,15 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
 const Solution = () => {
   return (
@@ -105,16 +114,35 @@ const Solution = () => {
         </div>
         
         <div className="text-center">
-          <a 
-            href="https://www.asaas.com/c/svykllvimm6r8na5" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'TRANSFORMAR'})}
-          >
-            <Button variant="cta" size="xl" className="mb-4">
-              🚀 Quero Transformar Minha Carreira Agora
-            </Button>
-          </a>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button 
+                variant="cta" 
+                size="xl" 
+                className="mb-4"
+                onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'TRANSFORMAR'})}
+              >
+                🚀 Quero Transformar Minha Carreira Agora
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Para contratar a mentoria escolha o pacote INICIANTE</AlertDialogTitle>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogAction asChild>
+                  <a 
+                    href="https://contrate.robotsa.com.br/?plan=iniciante"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    CONTRATAR
+                  </a>
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
           <p className="text-sm text-muted-foreground">
             ⏰ Vagas limitadas • 💳 Parcelamos em até 12x • 🛡️ Garantia Incondicional: 7 dias
           </p>
