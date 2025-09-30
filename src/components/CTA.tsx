@@ -65,7 +65,7 @@ const CTA = () => {
               <p className="text-4xl font-bold line-through opacity-60">R$ 9.498</p>
               
               <p className="text-lg opacity-75 mb-2 mt-4">Sua oportunidade:</p>
-              <p className="text-6xl font-bold text-primary">10x de R$ 29,90</p>
+              <p className="text-4xl font-bold text-primary">10x de R$ 29,90</p>
               
               <a 
                 href="https://www.asaas.com/c/svykllvimm6r8na5" 
