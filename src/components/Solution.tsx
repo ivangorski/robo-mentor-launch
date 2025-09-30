@@ -94,7 +94,10 @@ const Solution = () => {
               <div className="bg-white/20 p-6 rounded-xl">
                 <p className="text-sm opacity-90 mb-2">Formação subsidiada:</p>
                 <p className="text-3xl font-bold line-through opacity-75">R$ 11.000</p>
-                <p className="text-4xl font-bold">10x de R$ 29,90</p>
+                <p className="font-bold">
+                  <span className="text-2xl">10x de </span>
+                  <span className="text-4xl">R$ 29,90</span>
+                </p>
                 <p className="text-sm opacity-90 mt-2">Apenas 50 vagas c/ mentoria</p>
               </div>
             </div>
