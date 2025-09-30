@@ -16,7 +16,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center text-white">
         <Badge className="mb-6 text-sm font-medium bg-white/20 text-white border-white/30">
-          🚀 Programa de Aceleração em Novas Tecnologias
+          🚀 Mentoria Robot S.A.
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
