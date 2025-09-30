@@ -5,6 +5,7 @@ import WhatsAppDemo from "@/components/WhatsAppDemo";
 import Solution from "@/components/Solution";
 import Objections from "@/components/Objections";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [videoStarted, setVideoStarted] = useState(false);
@@ -21,6 +22,7 @@ const Index = () => {
       <Solution />
       <Objections />
       <CTA />
+      <Footer />
     </div>
   );
 };
