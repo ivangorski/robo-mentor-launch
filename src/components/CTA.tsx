@@ -11,8 +11,28 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import { differenceInDays } from "date-fns";
+
+const calculateRemainingSlots = () => {
+  const today = new Date();
+  const startDate = new Date("2025-01-01");
+  const endDate = new Date("2025-12-30");
+  
+  const totalDays = differenceInDays(endDate, startDate);
+  const daysRemaining = differenceInDays(endDate, today);
+  
+  // Se já passou da data final, retorna 0
+  if (daysRemaining <= 0) return 0;
+  
+  // Calcula proporcionalmente (50 vagas no início, 0 no final)
+  const slots = Math.max(1, Math.round((daysRemaining / totalDays) * 50));
+  
+  return slots;
+};
 
 const CTA = () => {
+  const remainingSlots = calculateRemainingSlots();
+  
   return (
     <section id="cta-section" className="esconder py-20 bg-white text-gray-900 relative overflow-hidden">
       {/* Animated background elements */}
@@ -87,7 +107,7 @@ const CTA = () => {
                     className="block bg-gradient-to-r from-primary to-primary-glow p-4 rounded-lg mt-4 text-white hover:shadow-glow transition-all duration-300 cursor-pointer"
                   >
                     <p className="font-bold">⚡ FORMAÇÃO COM BOLSA 95%</p>
-                    <p className="text-sm opacity-90">Apenas para os próximos 11 alunos</p>
+                    <p className="text-sm opacity-90">Apenas para os próximos {remainingSlots} alunos</p>
                   </div>
                 </AlertDialogTrigger>
                 <AlertDialogContent>
@@ -166,7 +186,7 @@ const CTA = () => {
           <p className="text-lg font-semibold mb-2">🔥 VAGAS LIMITADA COM MENTORIA</p>
           <p className="opacity-90">
             Só conseguimos dar suporte individualizado para 50 alunos este ano. 
-            Restam apenas <span className="font-bold text-primary">11 vagas</span>. 
+            Restam apenas <span className="font-bold text-primary">{remainingSlots} vagas</span>. 
             A próxima turma somente no ano seguinte com mentorias em grupo. Aproveite.
           </p>
         </div>
