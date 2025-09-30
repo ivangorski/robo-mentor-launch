@@ -32,7 +32,7 @@ const CTA = () => {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>
-                  <span>90 dias plataforma - R$ 897</span>
+                  <span>60 dias plataforma - R$ 498</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>
@@ -62,7 +62,7 @@ const CTA = () => {
             
             <div className="text-center">
               <p className="text-lg opacity-75 mb-2">Valor total:</p>
-              <p className="text-4xl font-bold line-through opacity-60">R$ 9.897</p>
+              <p className="text-4xl font-bold line-through opacity-60">R$ 9.498</p>
               
               <p className="text-lg opacity-75 mb-2 mt-4">Sua oportunidade:</p>
               <p className="text-6xl font-bold text-primary">R$ 1.997</p>
