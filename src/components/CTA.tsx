@@ -51,7 +51,7 @@ const CTA = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>
-                  <span>Receba leads da sua região</span>
+                  <span>Liberdade de trabalho</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-success">✓</span>

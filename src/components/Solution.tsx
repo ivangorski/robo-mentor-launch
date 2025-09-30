@@ -85,7 +85,7 @@ const Solution = () => {
                   <span className="text-2xl">📈</span>
                   <div>
                     <p className="font-semibold">Torne-se um Consultor Certificado - R$ inestimável</p>
-                    <p className="opacity-90 text-sm">Receba leads na sua região para você atender.</p>
+                    <p className="opacity-90 text-sm">Liberdade de trabalho</p>
                   </div>
                 </div>
               </div>
