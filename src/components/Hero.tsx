@@ -22,7 +22,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground">
           Transforme sua carreira
           <span className="block text-transparent bg-clip-text bg-gradient-primary">
-            construindo Robôs de IA
+            dominando projetos de IA
           </span>
         </h1>
         
