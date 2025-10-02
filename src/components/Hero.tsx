@@ -30,25 +30,6 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
           Aprenda a construir robôs que trabalham 24/7, mesmo enquanto você dorme. A profissão do futuro, disponível hoje.
         </p>
         
-        {/* Video Section */}
-        <div className="mb-12 max-w-4xl mx-auto">
-          <div className="relative bg-card border rounded-2xl p-2 shadow-elegant">
-            <div className="aspect-video rounded-xl overflow-hidden">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/LmiEsSk12JA?rel=0"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-          </div>
-          <p className="text-center text-muted-foreground text-sm mt-3">
-            ⏱️ Quer empreender? no exemplo acima como se tornar consultor da Robot S.A. e ganhar rapidamente.
-          </p>
-        </div>
-        
         {showCTA && (
           <div className="animate-fade-in">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
