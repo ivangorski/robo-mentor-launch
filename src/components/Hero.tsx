@@ -20,9 +20,9 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground">
-          Transforme sua carreira com
+          Transforme sua carreira
           <span className="block text-transparent bg-clip-text bg-gradient-primary">
-            robôs de IA para WhatsApp
+            construindo Robôs de IA
           </span>
         </h1>
         
