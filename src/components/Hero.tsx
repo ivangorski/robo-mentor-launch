@@ -27,8 +27,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-          Aprenda a criar e comercializar chatbots inteligentes que vendem 24/7, 
-          mesmo enquanto você dorme. Uma profissão do futuro, disponível hoje.
+          Aprenda a construir robôs que trabalham 24/7, mesmo enquanto você dorme. A profissão do futuro, disponível hoje.
         </p>
         
         {/* Video Section */}
