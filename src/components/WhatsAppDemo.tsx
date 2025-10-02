@@ -113,9 +113,9 @@ const WhatsAppDemo = () => {
           
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">💰</div>
-            <h4 className="font-bold mb-2">Conversão alta</h4>
+            <h4 className="font-bold mb-2">Maiores ganhos</h4>
             <p className="text-sm text-muted-foreground">
-              Scripts otimizados que convertem visitantes em clientes.
+              A IA vai estar no centro dos principais projetos nos próximos 5 anos
             </p>
           </Card>
         </div>
