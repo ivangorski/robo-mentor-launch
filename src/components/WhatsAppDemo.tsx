@@ -97,9 +97,9 @@ const WhatsAppDemo = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">⚡</div>
-            <h4 className="font-bold mb-2">Resposta instantânea</h4>
+            <h4 className="font-bold mb-2">Reduz custos</h4>
             <p className="text-sm text-muted-foreground">
-              Cliente nunca fica esperando. Atendimento imediato 24/7.
+              Licenças de software e pessoas são maiores despesas das empresas. A Robot diminui as duas.
             </p>
           </Card>
           
