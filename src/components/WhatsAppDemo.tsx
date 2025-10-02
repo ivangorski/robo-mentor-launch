@@ -90,7 +90,7 @@ const WhatsAppDemo = () => {
             className="rounded-2xl shadow-primary max-w-4xl mx-auto"
           />
           <p className="mt-6 text-lg text-muted-foreground">
-            Quanto vale um robô que atende clientes simultaneamente, não falta e fecha vendas 24x7?
+            Finanças, Marketing, Vendas são só exemplos de aplicações. Existem inúmeras oportunidades para usar IA nos negócios e a Robot é a plataforma ideal.
           </p>
         </div>
         
