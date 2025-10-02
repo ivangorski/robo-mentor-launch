@@ -122,7 +122,7 @@ const Solution = () => {
                 className="mb-4"
                 onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'TRANSFORMAR'})}
               >
-                🚀 Quero Transformar Minha Carreira Agora
+                🚀 Quero dominar IA agora
               </Button>
             </AlertDialogTrigger>
             <AlertDialogContent>
