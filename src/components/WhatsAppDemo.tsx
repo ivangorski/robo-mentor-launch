@@ -97,7 +97,7 @@ const WhatsAppDemo = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">⚡</div>
-            <h4 className="font-bold mb-2">Reduz custos</h4>
+            <h4 className="text-lg font-bold mb-2">Reduz custos</h4>
             <p className="text-sm text-muted-foreground">
               Licenças de software e pessoas são maiores despesas das empresas. A Robot diminui as duas.
             </p>
@@ -105,7 +105,7 @@ const WhatsAppDemo = () => {
           
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">🎯</div>
-            <h4 className="font-bold mb-2">Empresas investirão em IA</h4>
+            <h4 className="text-lg font-bold mb-2">Empresas investirão em IA</h4>
             <p className="text-sm text-muted-foreground">
               Seja você quem propõe e executa projetos na empresa. Ganhe visibilidade e liderança.
             </p>
@@ -113,7 +113,7 @@ const WhatsAppDemo = () => {
           
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">💰</div>
-            <h4 className="font-bold mb-2">Maiores ganhos</h4>
+            <h4 className="text-lg font-bold mb-2">Maiores ganhos</h4>
             <p className="text-sm text-muted-foreground">
               A IA vai estar no centro dos principais projetos nos próximos 5 anos
             </p>
