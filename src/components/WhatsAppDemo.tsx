@@ -78,7 +78,7 @@ const WhatsAppDemo = () => {
               className="rounded-2xl shadow-whatsapp max-w-sm mx-auto"
             />
             <p className="mt-4 text-sm text-muted-foreground">
-              Interface real do WhatsApp com nosso robô
+              Exemplo da IA conectada no WhatsApp
             </p>
           </div>
         </div>
