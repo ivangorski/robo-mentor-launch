@@ -144,7 +144,7 @@ const Solution = () => {
             </AlertDialogContent>
           </AlertDialog>
           <p className="text-sm text-muted-foreground">
-            ⏰ Vagas limitadas • 💳 Parcelamos em até 12x • 🛡️ Garantia Incondicional: 7 dias
+            ⏰ Vagas limitadas • 💳 Parcelamos em até 10x • 🛡️ Garantia Incondicional: 7 dias
           </p>
         </div>
       </div>
