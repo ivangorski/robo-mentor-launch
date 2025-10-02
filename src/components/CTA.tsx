@@ -141,7 +141,7 @@ const CTA = () => {
                 className="text-2xl py-6 px-12 w-full md:w-auto bg-gradient-to-r from-primary to-primary-glow text-white hover:shadow-glow border-2 border-primary"
                 onClick={() => (window as any).gtag('event', 'pagamento', {'nome_botao': 'SIM_QUERO'})}
               >
-                🚀 SIM! QUERO GARANTIR MINHA VAGA AGORA
+                🚀 VAMOS EM FRENTE. QUERO CONTRATAR.
               </Button>
             </AlertDialogTrigger>
             <AlertDialogContent>
