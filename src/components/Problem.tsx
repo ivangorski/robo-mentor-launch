@@ -21,19 +21,19 @@ const Problem = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Você trabalha em uma profissão comum, vendendo horas pelo seu serviço.</span>
+                <span>A sua profissão corre o risco de ser extinta ou acabar</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Não tem controle o aumento de salário e não sabe se será promovido</span>
+                <span>A IA parece complicada demais de implantar</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Seus custos não param de subir (casamento, escola, filhos)</span>
+                <span>Você não sabe por onde começar</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-destructive text-xl">❌</span>
-                <span>Não consegue realizar seus planos</span>
+                <span>Em algum momento vai aparecer alguém que sabe e sua carreira vai estar em risco</span>
               </li>
             </ul>
           </Card>
