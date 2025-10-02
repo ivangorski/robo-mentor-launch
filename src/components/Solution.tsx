@@ -18,7 +18,7 @@ const Solution = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="mb-6 bg-gradient-primary text-white">
-            🎓 PANTECH - Programa de Aceleração
+            🎓 Consultores não precisam de emprego
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Torne-se um profissional valioso
