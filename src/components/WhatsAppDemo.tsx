@@ -105,9 +105,9 @@ const WhatsAppDemo = () => {
           
           <Card className="p-6 text-center">
             <div className="text-3xl mb-4">🎯</div>
-            <h4 className="font-bold mb-2">Qualificação inteligente</h4>
+            <h4 className="font-bold mb-2">Empresas investirão em IA</h4>
             <p className="text-sm text-muted-foreground">
-              IA identifica o perfil do cliente e oferece a solução ideal.
+              Seja você quem propõe e executa projetos na empresa. Ganhe visibilidade e liderança.
             </p>
           </Card>
           
