@@ -45,7 +45,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
             </div>
           </div>
           <p className="text-center text-muted-foreground text-sm mt-3">
-            ⏱️ Apresentação exclusiva que pode mudar sua vida financeira
+            ⏱️ Quer empreender? no exemplo acima como se tornar consultor da Robot S.A. e ganhar rapidamente.
           </p>
         </div>
         
