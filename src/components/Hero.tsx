@@ -61,7 +61,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
                   whatsappSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                📱 Ver Demonstração
+                📱 Exemplo de uso
               </Button>
               <Button 
                 variant="cta" 
