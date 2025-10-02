@@ -12,7 +12,7 @@ const WhatsAppDemo = () => {
             🤖 Demonstração Real
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Veja como funciona na prática
+            Exemplo de aplicação prática
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Estes são exemplos reais de robôs criados em nossa plataforma. 
