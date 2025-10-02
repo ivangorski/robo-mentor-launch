@@ -45,9 +45,9 @@ const CTA = () => {
         </Badge>
         
         <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Sua nova vida começa
+          Ganhe conhecimento e prática
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-glow">
-            nos próximos 30 dias
+            em pouco tempo
           </span>
         </h2>
         
