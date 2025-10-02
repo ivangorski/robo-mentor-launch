@@ -67,11 +67,11 @@ const Problem = () => {
         
         <div className="text-center">
           <div className="bg-gradient-primary p-8 rounded-2xl text-white max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold mb-4">📊 Dados do mercado</h3>
+            <h3 className="text-3xl font-bold mb-4">📊 Impacto no mercado</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
-                <div className="text-4xl font-bold">R$ 2.5Bi</div>
-                <div className="opacity-90">Mercado brasileiro de chatbots</div>
+                <div className="text-4xl font-bold">72%</div>
+                <div className="opacity-90">Profissões serão transformadas</div>
               </div>
               <div>
                 <div className="text-4xl font-bold">89%</div>
@@ -79,7 +79,7 @@ const Problem = () => {
               </div>
               <div>
                 <div className="text-4xl font-bold">R$ 15k</div>
-                <div className="opacity-90">Salário médio da profissão</div>
+                <div className="opacity-90">Salário médio de gestor de IA</div>
               </div>
             </div>
           </div>
