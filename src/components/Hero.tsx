@@ -72,7 +72,7 @@ const Hero = ({ onVideoStart, showCTA = false }: { onVideoStart: () => void; sho
                   ctaSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                🎯 Quero Começar Agora
+                🎯 Tenho interesse
               </Button>
             </div>
             
