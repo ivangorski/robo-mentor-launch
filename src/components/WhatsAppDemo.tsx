@@ -15,7 +15,7 @@ const WhatsAppDemo = () => {
             Exemplo de aplicação prática
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Exemplo de um robô muito simples criado em nossa plataforma: ele atende clientes e agenda consultas para um médico. Todo consultório quer isso.
+            Nestee consultório o robô atende clientes, agenda consultas e faz tudo para um consultorio. Tudo em linguagem natural baseado em GPT
           </p>
         </div>
         
